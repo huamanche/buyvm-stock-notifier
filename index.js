@@ -15,11 +15,11 @@ const $ = require('cheerio');
   if(availableCount > 0) {
     await client.post('https://platform.tillmobile.com/api/send')
       .query({
-        username: '<REDACTED>',
-        api_key: '<REDACTED>',
+        username: process.env.TILL_ID,
+        api_key: process.env.TILL_KEY,
       })
       .send({
-        phone: ["<REDACTED>"],
+        phone: [process.env.PHONE_NUMBER],
         text: "Slice is available dude. Rush, rush, rush!",
       });
   }
