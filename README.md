@@ -8,7 +8,7 @@ A'ight. I gotcha covered in golden!
    * You'd probably want to edit 5th and 7th lines.
    * 5th line is currently for Luxembourg category. Visit the URL for detail.
    * 7th line is currently for `#product3`, which is `LU E3-KVM 2GB`.
-4. Enable Actions if disabled in repository settings.
+4. Enable Actions if disabled in repository settings. Make sure `Allow all actions` option is selected.
 5. Let it run and text you when it's time to grab your slice!
 
 P.S. You can optionally modify `.github/workflows/node.js.yml` file to set your own cron schedule which is currently set for once in 5 minutes.
