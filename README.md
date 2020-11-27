@@ -10,3 +10,5 @@ A'ight. I gotcha covered in golden!
    * 7th line is currently for `#product3`, which is `LU E3-KVM 2GB`.
 4. Enable Actions if disabled in repository settings.
 5. Let it run and text you when it's time to grab your slice!
+
+P.S. You can optionally modify `.github/workflows/node.js.yml` file to set your own cron schedule which is currently set for once in 5 minutes.
