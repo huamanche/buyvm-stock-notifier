@@ -1,4 +1,4 @@
-# Can't grab a BuyVM slice 'cause it's out of stock?
+## Can't grab a BuyVM slice 'cause it's out of stock?
 A'ight. I gotcha covered!
 
 1. Get yourself a free Till Mobile account. Either on [their website](https://tillmobile.com) or via [Heroku addons marketplace](https://elements.heroku.com/addons/till).
@@ -12,3 +12,6 @@ A'ight. I gotcha covered!
 5. Let it run and text you when it's time to grab your slice!
 
 P.S. You can optionally modify `.github/workflows/node.js.yml` file to set your own cron schedule which is currently set for once in 5 minutes.
+
+## License
+See [LICENSE.md](LICENSE.md).
