@@ -1,5 +1,5 @@
 # Can't grab a BuyVM slice 'cause it's out of stock?
-A'ight. I gotcha covered in golden!
+A'ight. I gotcha covered!
 
 1. Get yourself a free Till Mobile account. Either on [their website](https://tillmobile.com) or via [Heroku addons marketplace](https://elements.heroku.com/addons/till).
 2. Open up repository settings, and put your phone number (in [E.123](https://en.wikipedia.org/wiki/E.123#Example_formats) international notation, e.g. +905555555555) and Till Mobile credentials as GitHub Actions secrets.
