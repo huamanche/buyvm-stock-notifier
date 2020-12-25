@@ -13,6 +13,8 @@ const $ = require('cheerio');
   console.log('Inferred count: %o', availableCount);
 
   if(availableCount > 0 || isNaN(availableCount)) {
+    console.log('Sending SMS...');
+    
     await client.post('https://platform.tillmobile.com/api/send')
       .query({
         username: process.env.TILL_ID,
