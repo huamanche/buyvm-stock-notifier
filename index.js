@@ -8,6 +8,9 @@ const $ = require('cheerio');
   const sliceText = sliceSel.text().trim();
 
   let availableCount = parseInt(sliceText.split(' ')[0], 10);
+  
+  // Sanity check for unspecified number of available stock.
+  // This rarely happens to LU region. Grab as many slices as you can!
   if(sliceSel.length == 0) {
     availableCount = Infinity;
   }
