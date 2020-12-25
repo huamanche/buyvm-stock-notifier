@@ -7,7 +7,7 @@ const $ = require('cheerio');
   const sliceSel = $('#product3 .package-qty', resp.text);
   const sliceText = sliceSel.text().trim();
 
-  const availableCount = parseInt(sliceText.split(' ')[0], 10);
+  let availableCount = parseInt(sliceText.split(' ')[0], 10);
   if(sliceSel.length == 0) {
     availableCount = Infinity;
   }
