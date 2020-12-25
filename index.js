@@ -12,7 +12,7 @@ const $ = require('cheerio');
   console.log('Selector text: %o', sliceText);
   console.log('Inferred count: %o', availableCount);
 
-  if(availableCount > 0 || availableCount.isNaN()) {
+  if(availableCount > 0 || isNaN(availableCount)) {
     await client.post('https://platform.tillmobile.com/api/send')
       .query({
         username: process.env.TILL_ID,
