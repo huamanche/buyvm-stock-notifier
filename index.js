@@ -2,8 +2,16 @@ const client = require('superagent');
 const $ = require('cheerio');
 
 (async () => {
+  // gid=37 ==> Las Vegas - AMD RYZEN KVM
+  // gid=38 ==> New York - AMD RYZEN KVM
+  // gid=39 ==> Luxembourg - AMD RYZEN KVM
   const resp = await client.get('https://my.frantech.ca/cart.php?gid=39');
 
+  // #product1 ==> RYZEN KVM 512MB
+  // ...
+  // #product3 ==> RYZEN KVM 2GB
+  // ...
+  // #product11 ==> RYZEN KVM 32GB
   const sliceSel = $('#product3 .package-qty', resp.text);
   const sliceText = sliceSel.text().trim();
 
